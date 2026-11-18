@@ -1,0 +1,508 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portofolio Selvina Nahakleta</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fc;
+  color: #263247;
+  line-height: 1.8;
+}
+
+/* NAVIGASI */
+header {
+  background: #173b78;
+  padding: 18px 8%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: white;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #a9c8ff;
+}
+
+/* BERANDA */
+.hero {
+  min-height: 500px;
+  padding: 80px 10%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg,#dce8ff,#ffffff);
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 45px;
+  width: 100%;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.hero h4 {
+  color: #3157a4;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  color: #173b78;
+  margin: 10px 0;
+}
+
+.hero h2 {
+  font-size: 22px;
+  color: #536987;
+}
+
+.hero p {
+  margin: 15px 0 25px;
+}
+
+/* FOTO PROFIL */
+.foto-profil {
+  width: 270px;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 18px;
+  border: 5px solid white;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.btn {
+  display: inline-block;
+  background: #3157a4;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 7px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #173b78;
+}
+
+/* BAGIAN UMUM */
+section {
+  padding: 65px 10%;
+}
+
+.section-title {
+  text-align: center;
+  color: #173b78;
+  font-size: 29px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: white;
+  padding: 27px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+.card h3 {
+  color: #3157a4;
+  margin-bottom: 10px;
+}
+
+.profile {
+  max-width: 850px;
+  margin: auto;
+}
+
+.profile p {
+  margin-bottom: 8px;
+}
+
+/* KEAHLIAN */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+}
+
+.skill {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  color: #3157a4;
+  font-weight: bold;
+  box-shadow: 0 4px 12px #0000000c;
+}
+
+/* PENDIDIKAN */
+.education {
+  border-left: 4px solid #3157a4;
+}
+
+/* FOOTER */
+footer {
+  background: #173b78;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+/* TAMPILAN HP */
+@media(max-width:650px) {
+
+  nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hero {
+    padding: 60px 8%;
+  }
+
+  .hero-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .foto-profil {
+    width: 220px;
+    height: 290px;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 45px 8%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGASI -->
+<header>
+<nav>
+
+<div class="logo">SELVINA N.</div>
+
+<ul>
+<li><a href="#beranda">Beranda</a></li>
+<li><a href="#profil">Profil</a></li>
+<li><a href="#pendidikan">Pendidikan</a></li>
+<li><a href="#keahlian">Keahlian</a></li>
+<li><a href="#tujuan">Tujuan</a></li>
+<li><a href="#pengalaman">Pengalaman</a></li>
+<li><a href="#kontak">Kontak</a></li>
+</ul>
+
+</nav>
+</header>
+
+<!-- BERANDA -->
+<section class="hero" id="beranda">
+
+<div class="hero-container">
+
+<div class="hero-content">
+
+<h4>PERSONAL PORTFOLIO</h4>
+
+<h1>Selvina Nahakleta</h1>
+
+<h2>Mahasiswa Pendidikan Matematika</h2>
+
+<p>
+Selamat datang di portofolio pribadi saya.
+Saya adalah mahasiswa Universitas Pattimura
+PSDKU Maluku Barat Daya, Program Studi Pendidikan
+Matematika, yang memiliki semangat untuk belajar,
+berkembang, dan meraih cita-cita.
+</p>
+
+<a href="#profil" class="btn">Kenali Saya</a>
+
+</div>
+
+<img src="foto selin.jpeg"
+     alt="Foto Selvina Nahakleta"
+     class="foto-profil">
+
+</div>
+</section>
+
+<!-- PROFIL -->
+<section id="profil">
+
+<h2 class="section-title">Tentang Saya</h2>
+
+<div class="card profile">
+
+<h3>Identitas Pribadi</h3>
+
+<p><b>Nama Lengkap:</b> Selvina Nahakleta</p>
+<p><b>NIM:</b> 202389014</p>
+<p><b>Program Studi:</b> Pendidikan Matematika</p>
+<p><b>Fakultas:</b> Keguruan dan Ilmu Pendidikan</p>
+<p><b>Universitas:</b> Universitas Pattimura PSDKU MBD</p>
+
+<h3 style="margin-top:20px;">Deskripsi Diri</h3>
+
+<p>
+Perkenalkan, nama saya Selvina Nahakleta.
+Saya merupakan mahasiswa Program Studi Pendidikan
+Matematika di Universitas Pattimura PSDKU MBD.
+Saya memiliki semangat untuk terus belajar,
+mengembangkan kemampuan diri, serta memperluas
+wawasan khususnya dalam bidang pendidikan matematika.
+</p>
+
+<p>
+Saya percaya bahwa setiap proses pembelajaran
+merupakan kesempatan untuk memperoleh pengalaman,
+pengetahuan, dan menjadi pribadi yang lebih baik.
+</p>
+
+</div>
+</section>
+
+<!-- PENDIDIKAN -->
+<section id="pendidikan">
+
+<h2 class="section-title">Riwayat Pendidikan</h2>
+
+<div class="card education">
+
+<h3>Perguruan Tinggi</h3>
+<p>Universitas Pattimura PSDKU MBD</p>
+<p>Fakultas Keguruan dan Ilmu Pendidikan</p>
+<p>Program Studi Pendidikan Matematika</p>
+<p>NIM: 202389014</p>
+
+</div>
+
+<div class="card education">
+
+<h3>Sekolah Menengah Atas</h3>
+<p>SMA Negeri 9 Maluku Barat Daya</p>
+
+</div>
+
+<div class="card education">
+
+<h3>Sekolah Menengah Pertama</h3>
+<p>SMP Negeri 4 Tanimbar Selatan</p>
+
+</div>
+
+</section>
+
+<!-- KEAHLIAN -->
+<section id="keahlian">
+
+<h2 class="section-title">Keahlian dan Kemampuan</h2>
+
+<div class="skills">
+
+<div class="skill">Berpikir Logis</div>
+<div class="skill">Pemecahan Masalah</div>
+<div class="skill">Kemampuan Berhitung</div>
+<div class="skill">Komunikasi</div>
+<div class="skill">Kerja Sama Tim</div>
+<div class="skill">Microsoft Office</div>
+<div class="skill">Manajemen Waktu</div>
+<div class="skill">Kreativitas</div>
+<div class="skill">Kemauan Belajar</div>
+
+</div>
+</section>
+
+<!-- TUJUAN -->
+<section id="tujuan">
+
+<h2 class="section-title">Tujuan dan Cita-Cita</h2>
+
+<div class="card">
+
+<h3>Tujuan Pendidikan</h3>
+
+<p>
+Tujuan saya menempuh pendidikan di Program Studi
+Pendidikan Matematika adalah untuk memperoleh
+pengetahuan, meningkatkan kemampuan akademik,
+serta memahami konsep-konsep matematika dan
+metode pembelajaran yang baik.
+</p>
+
+<h3 style="margin-top:20px;">Cita-Cita</h3>
+
+<p>
+Saya bercita-cita menjadi seorang pendidik yang
+profesional, bertanggung jawab, kreatif, dan mampu
+memberikan kontribusi positif bagi dunia pendidikan.
+</p>
+
+</div>
+</section>
+
+<!-- PENGALAMAN DAN AKTIVITAS -->
+<section id="pengalaman">
+
+<h2 class="section-title">Pengalaman dan Aktivitas</h2>
+
+<div class="card">
+
+<h3>1. Praktik Lapangan Persekolahan II (PLP II)</h3>
+
+<p>
+Saya pernah mengikuti kegiatan PLP II sebagai salah
+satu bagian dari proses pembelajaran di Program Studi
+Pendidikan Matematika. Melalui kegiatan ini, saya
+memperoleh pengalaman secara langsung dalam dunia
+pendidikan, khususnya dalam kegiatan belajar mengajar
+di lingkungan sekolah.
+</p>
+
+<p>
+Kegiatan ini membantu saya meningkatkan kemampuan
+mengajar, berkomunikasi, berinteraksi dengan siswa,
+serta memahami tugas dan tanggung jawab seorang guru.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>2. Kuliah Kerja Nyata (KKN)</h3>
+
+<p>
+Saya juga pernah mengikuti kegiatan Kuliah Kerja Nyata
+(KKN) sebagai bentuk pengabdian kepada masyarakat.
+Melalui kegiatan ini, saya mendapatkan pengalaman
+untuk berinteraksi dan bekerja sama dengan masyarakat
+serta ikut berpartisipasi dalam berbagai kegiatan sosial.
+</p>
+
+<p>
+Kegiatan KKN memberikan pengalaman berharga dalam
+meningkatkan rasa tanggung jawab, kerja sama tim,
+kedisiplinan, dan kepedulian terhadap lingkungan
+masyarakat.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>3. Kegiatan Akademik</h3>
+
+<p>
+Mengikuti kegiatan perkuliahan, mengerjakan tugas,
+berdiskusi, mempelajari materi matematika, serta
+mengembangkan kemampuan berpikir kritis dan logis.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>4. Pengembangan Diri</h3>
+
+<p>
+Berusaha meningkatkan pengetahuan, keterampilan,
+kedisiplinan, tanggung jawab, dan kemampuan
+berkomunikasi melalui berbagai proses pembelajaran
+dan pengalaman.
+</p>
+
+</div>
+
+</section>
+
+<!-- KONTAK -->
+<section id="kontak">
+
+<h2 class="section-title">Kontak Saya</h2>
+
+<div class="card profile">
+
+<p><b>Nama:</b> Selvina Nahakleta</p>
+<p><b>Email:</b> Belum dicantumkan</p>
+<p><b>Nomor HP:</b> Belum dicantumkan</p>
+<p><b>Alamat:</b> Belum dicantumkan</p>
+
+<p style="margin-top:15px;">
+Terima kasih telah mengunjungi portofolio
+pribadi saya. Semoga perjalanan pendidikan
+ini menjadi langkah untuk meraih masa depan
+yang lebih baik.
+</p>
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+<p>© 2026 Selvina Nahakleta</p>
+<p>Personal Portfolio | Pendidikan Matematika</p>
+<p>Universitas Pattimura PSDKU MBD</p>
+
+</footer>
+
+</body>
+</html>
